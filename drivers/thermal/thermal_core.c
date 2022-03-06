@@ -1660,8 +1660,6 @@ static struct notifier_block thermal_pm_nb = {
 	.notifier_call = thermal_pm_notify,
 };
 
-
-
 static int __init thermal_init(void)
 {
 	int result;
@@ -1712,7 +1710,6 @@ error:
 
 static void thermal_exit(void)
 {
-
 	unregister_pm_notifier(&thermal_pm_nb);
 	of_thermal_destroy_zones();
 	destroy_workqueue(thermal_passive_wq);
