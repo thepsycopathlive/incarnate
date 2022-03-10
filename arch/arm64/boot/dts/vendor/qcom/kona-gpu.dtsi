@@ -57,7 +57,7 @@
 
 		qcom,initial-pwrlevel = <2>;
 
-		qcom,idle-timeout = <64>; /* msecs */
+		qcom,idle-timeout = <58>; /* msecs */
 
 		qcom,highest-bank-bit = <16>;
 
@@ -84,6 +84,9 @@
 				"gpu_cc_ahb", "l3_vote";
 
 		qcom,isense-clk-on-level = <1>;
+
+/* To disable GPU wake up on touch event */
+		qcom,disable-wake-on-touch;
 
 		/* Bus Scale Settings */
 		qcom,gpubw-dev = <&gpubw>;
